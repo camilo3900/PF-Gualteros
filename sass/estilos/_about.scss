@@ -1,0 +1,60 @@
+body#body__about{
+
+    main#main_de_contacto{
+        #titulos{
+            font-weight: 700;
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        .container{
+            
+            margin-bottom: 20px;
+            #contenedorHistoria{
+                align-items: center;
+                background-color: #4d4d4d;
+                padding: 30px;
+                .contenido{
+                    font-size: map-get($sizeFuentes, parrafos);
+                    h2{
+                        font-weight: 700;
+                        font-size: map-get($sizeFuentes, subtitulos );
+                    }
+                    .parrafo_historia{
+                        
+                        line-height: 2;
+                        font-size: map-get($sizeFuentes, parrafos);
+                        
+                    }
+                    
+                }    
+                
+            }
+            #contenedorLocalizar{
+                padding: 20px 30px;
+                margin-top: 20px;
+                background-color: #4d4d4d;
+            }
+            .encuentranos{
+                iframe{
+                    width: 100%;
+                    height: 100%;
+                }
+               h2{
+                font-weight: 700;
+                font-size: map-get($sizeFuentes, subtitulos );
+               }
+               .parrafo_historia{
+                 
+                line-height: 2;
+                font-size: map-get($sizeFuentes, parrafos);
+              
+            }
+
+            
+        }
+        
+
+    }
+}
+}

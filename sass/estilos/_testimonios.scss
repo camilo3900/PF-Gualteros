@@ -1,0 +1,35 @@
+
+/* ACA VA TODO EL CSS DE TESTIMONIOS */
+#titulos h1{
+    text-align: center;
+}
+
+section.contenedor_section{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    z-index: -2;
+
+   .card{
+    h2{
+        @include nombres;
+    }
+    p{
+        text-align: justify;
+        @include texto-tarjetas;
+        text-transform: lowercase;
+    }
+    .text-muted{
+        text-transform: capitalize;
+    }
+   }
+}
+
+/* body#body_testimonio, body#body_productos, body#body_index{
+    background-image: linear-gradient(55deg,#efebc4, #dae46b );
+    
+    width: 100%;
+    background-size: cover;
+    
+} */

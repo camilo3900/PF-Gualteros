@@ -1,0 +1,58 @@
+
+$colores: (
+    'bg-footer': #f7bb08,
+    'redes-color':#00405d,
+    'color-titulo-principal':#7451E0,
+    'redes-color-hover':#7facce,
+    'color-copy-footer': #F71735,
+    'color-menu-option': #e78787,
+    'color-texto-subtitulo': #fff,
+    'color-texto-parrafo': #d5d0d0,
+    'color-body': #403737,
+    'color-fondo-formu': #2f2c2c,
+    'color-ligth-blue': #41EAD4,
+);
+
+$sizeFuentes:(
+    "titulos": 50px,
+    "subtitulos": 40px,
+    "cards_titulo": 27px,
+    "cards_texto": 22px,
+    "parrafos": 18px,
+);
+
+/* Transiciones */
+@mixin titulo-principal{
+    color: map-get($colores , color-titulo-principal);
+    font-size: map-get($sizeFuentes , titulos); 
+    font-weight: 700;
+}
+@mixin subtitulos{
+    color: map-get($colores, color-texto-subtitulo);
+    padding: 12px;
+    font-size: map-get($sizeFuentes , subtitulos);
+    font-weight: 700;
+}
+@mixin parrafo{
+    text-align: justify;
+    color: map-get($colores, color-texto-parrafo );
+    font-size: map-get($sizeFuentes, parrafos );
+    text-transform: none;
+}
+@mixin nombres{
+    color: map-get($colores, color-texto-subtitulo);
+    padding: 12px;
+    font-size: map-get($sizeFuentes , cards_titulo);
+    font-weight: 700;
+}
+@mixin texto-tarjetas{
+    color: map-get($colores, color-texto-parrafo);
+    font-size: map-get($sizeFuentes , cards_texto);
+}
+
+@mixin animacionUp {
+    transition: all 0.5s;
+}
+@keyframes galeria {
+    0% { transform: translateY(-20px); }
+}

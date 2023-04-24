@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FUENTES DE LA PAGINA -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="../sass/main.css">
+<!-- Iconos Redes Sociales -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- Le meto  al bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Pagina principal</title>
+    <meta name="keywords" content="Cafe espresso, Contactos coffee-kingdom, Formulario, mini chocolaticos, tortas, Ofertas Coffee-kingdom">
+    <meta name="description" content="En coffee-kingdom actualizamos nuestro inventario, ¿Estas interesado en recibir nuestras ofertas?">
+</head>
+<body id="body__contact">
+
+<header class="header bg-warning">
+    <div class="header__logo ">
+        <a href="#"><img src="../img/logo.png"
+                alt="logo"></a>
+    </div>
+    <button id="abrir" class="header__open_menu"><i class="fa-sharp fa-solid fa-bars"></i></button>
+    <nav class="header__nav visible" id="nav">
+        
+        <button class="header__close_menu" id="cerrar"><i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+        <ul id="header__lista">
+            <li class="nav__opcion"><a href="../index.html">Home</a></li>
+            <li class="nav__opcion" id="plegable"><a href="./productos.html">Productos</a>
+                <ul>
+                    <li><a href="./productos.html#dulces">1. DULCES</a></li>
+                    <li><a href="./productos.html#bebidas_frias">2. BEBIDAS FRIAS</a></li>
+                    <li><a href="./productos.html#bebidas_calientes">3. BEBIDAS CALIENTES</a></li>
+                    <li><a href="./productos.html#tortas">4. TORTAS</a></li>
+                </ul>
+            </li>
+            <li class="nav__opcion"><a href="./about.html">About Us</a></li>
+            <li class="nav__opcion"><a href="./contacto.html">Contacto</a></li>
+            <li class="nav__opcion"><a href="./testimonios.html">Testimonios</a></li>
+        </ul>
+    </nav>
+    <div class="header__search">
+        <div>
+            <img src="../img/buscar-icon.png" alt="buscar">
+            <input type="text" placeholder="Buscar...">
+        </div>
+    </div>
+</header>
+<main id="contacto">
+    <div class="contenedor_principal">
+        <div class="contenedor1">
+            <h1>Recibe ofertas llenando el <span>formulario</span>!!</h1>
+            <img id="img_dog" src="https://cdn.pixabay.com/animation/2022/12/05/15/23/15-23-06-837_512.gif" alt="sdas">
+            <p> Te enviaremos info con los mejores descuentos. Tenemos gran variedad de productos a base de café que te gustarán, solo necesitas llenar el formulario para  obtener el catálogo de descuentos para este mes...</p>
+           
+            <button class="boton_formu bg-info">learn more</button>
+        </div>
+        <div class="contenedor2">
+            <h2>Formulario de Clientes</h2>
+            <form action="#">
+                <div class="form__bloque1">
+                    <div class="bloque1__subloque">
+                        <label for="from">Nombre:</label>
+                        <input class="caja" type="text" id="from" placeholder="">
+                    </div>
+                    <div class="bloque1__subloque">
+                        <label for="to">Apellidos:</label>
+                        <input class="caja" type="text" id="to" placeholder="">
+                    </div>
+                </div>
+                <div class="form__bloque2">
+                    <div class="bloque2__subloque">
+                        <label for="date">Correo:</label>
+                        <input class="caja" type="text" id="date" placeholder="">
+                    </div>
+                    <div class="bloque2__subloque">
+                        <label for="duration">Edad:</label>
+                        <input  class="caja" type="text" id="duration" placeholder="">
+                    </div>
+                    <div class="bloque2__subloque">
+                        <label for="adult">Ciudad:</label>
+                        <input class="caja" type="text" id="adult" placeholder="">
+                    </div>
+                    <div class="bloque2__subloque">
+                        <label for="child">Telefono Contacto:</label>
+                        <input class="caja" type="text" id="child" placeholder="">
+                    </div>
+                </div>   
+            </form>
+            <button class="boton_formu bg-info">ENIVAR</button>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="footer__principal">
+        <div class="mapa info">
+            <p class="footer__titular text-center">INFO</p>
+            <div class="contenido-info">
+            <p >Calle 54 # 23A-12</p>
+            <p>coffee-kingsonm@gmail.com</p>
+            <p></p>
+            <p>+57-317-652-3287</p>
+            </div>
+
+        </div>
+        <div class=" mapa" >
+            <p class="footer__titular text-center">REDES</p>
+            <!-- Seccion de iconos -->
+            <div class="contenido-redes">
+                    <a class="icon-config text-decoration-none me-5" href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a class="icon-config text-decoration-none me-5" href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="icon-config text-decoration-none me-5" href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="icon-config text-decoration-none me-5" href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a class="icon-config text-decoration-none me-5" id="tiktok" href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>        
+            </div>
+        </div>
+        <div class="mapa">
+            <p class="text-center footer__titular">MAPA</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.344887442849!2d-73.64384216511229!3d4.152414000000013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3e2d80bed5410d%3A0x41a3b6fd90707111!2sCaf%C3%A9%20Carajillo%20Express!5e0!3m2!1ses!2sco!4v1679550083592!5m2!1ses!2sco"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
+    </div>
+    <div class="col-xs-12  pt-4 copy">
+            <p class=" text-center"> &copy; 2023-Juan Camilo Gualteros | Todos los derechos
+                reservados</p>
+        </div>
+</footer>
+<script src="../js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+
+#body_index, #body__about, #body__productos, #body__testimonio{
+    background-color: map-get($colores , color-body);
+
+    p{
+        @include parrafo;
+
+       
+    }
+
+    .p-frases{
+        text-align: center;
+    }
+    
+
+    #titulos {
+        margin: auto;
+        
+        h1 {
+            @include titulo-principal;  
+        }
+    }
+ .carousel-item {
+        height: 40vh;
+    }
+    #img_main {
+    
+        order: 0;
+        width: 300px;
+        height: auto;
+        border: 3px solid white;
+        border-radius: 20%;
+    }
+
+    #carouselExampleSlidesOnly img {
+        position: relative;
+        height: 50vh;
+        z-index: -2;
+    }
+
+    #padding_contenido {
+        padding: 30px;
+    }
+    #galeria {
+     
+        margin: 50px auto;
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        gap: 10px;
+        justify-content: center;
+        img {
+            width: 300px;
+            height: auto;
+            animation: galeria 2s infinite alternate;
+ 
+        }
+    }
+
+    
+div{
+    text-align: center;
+    .sub{
+        border:2px solid #fff;
+        padding:10px;
+        margin-bottom: 50px;
+        text-align: center;
+        display: inline-block;
+        height: auto;
+        &:hover{
+            background-color: darkblue;
+        }
+        h2.galeria_titulo{
+    
+            @include subtitulos;
+ 
+        }
+        hr.linea {
+            background:#fff;
+            width: 100%;
+            height: 5px;
+            margin: 2px auto;
+        }
+    }
+}
+    .sect_anuncios { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .texto_comercial {
+    
+            .home__subtitulo {
+                @include subtitulos;
+                font-size: 40px;
+                color: #fff;
+               
+            }
+        }
+        iframe {
+            text-align: center;
+        }
+    }
+        .texto_extra {
+            p {
+                text-transform: lowercase;
+                font-style: italic;
+                color: white;
+    
+                span {
+                    color: darkblue;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    
+        .texto_extra {
+            text-align: center;
+    
+            #img_main {
+    
+                margin: 30px auto;
+                height: 55vh;
+            }
+
+        }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="../sass/main.css">
+<!-- Iconos Redes Sociales -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- Le meto mano al bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Pagina principal</title>
+        <!-- SEO -->
+    <meta name="keywords" content="historia, localizar, acerca de nosotros, mapa">
+    <meta name="description" content="Conoce la historia de nuestra tienda y encuentra nuestra ubicación.">
+</head>
+<body id="body__about">
+
+<header class="header bg-warning">
+    <div class="header__logo">
+        <a href="#"><img src="../img/logo.png"
+                alt="logo"></a>
+    </div>
+    <button id="abrir" class="header__open_menu"><i class="fa-sharp fa-solid fa-bars"></i></button>
+    <nav class="header__nav visible" id="nav">
+        
+        <button class="header__close_menu" id="cerrar"><i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+        <ul id="header__lista">
+            <li class="nav__opcion"><a href="../index.html">Home</a></li>
+            <li class="nav__opcion" id="plegable"><a href="./productos.html">Productos</a>
+                <ul>
+                    <li><a href="./productos.html#dulces">1. DULCES</a></li>
+                    <li><a href="./productos.html#bebidas_frias">2. BEBIDAS FRIAS</a></li>
+                    <li><a href="./productos.html#bebidas_calientes">3. BEBIDAS CALIENTES</a></li>
+                    <li><a href="./productos.html#tortas">4. TORTAS</a></li>
+                </ul>
+            </li>
+            <li class="nav__opcion"><a href="./about.html">About Us</a></li>
+            <li class="nav__opcion"><a href="./contacto.html">Contacto</a></li>
+            <li class="nav__opcion"><a href="./testimonios.html">Testimonios</a></li>
+        </ul>
+    </nav>
+    <div class="header__search">
+        <div>
+            <img src="../img/buscar-icon.png" alt="buscar">
+            <input type="text" placeholder="Buscar...">
+        </div>
+    </div>
+</header>
+<div id="titulos">
+    <h1  >Acerca de nosotros</h1>
+</div>
+
+<main id="main_de_contacto">
+    
+    <div class="container mt-5">
+        <div class="row" id="contenedorHistoria">
+            <div class="col-sm-5 col-md-6 gap-3 contenido">
+                <div>
+                    <div class="sub">
+                        <h2 class="galeria_titulo">Historia</h2>
+                        <hr class="linea">
+                    </div>
+                </div>
+                
+              
+                <p class="parrafo_historia">Coffee-Kingdom fue fundada por el señor William en la ciudad de Villavicencio (Colombia) en el 2007. Desde muy pequeño ayudaba a sus abuelos a tostar café y poco a poco se volvió un experto en seleccionar granos de café de excelente calidad.  Poco a poco ganó terreno en la producción cafetera, hasta que en 2005 inició su propio negocio en su ciudad natal. A medida que ganó la fama de su producto en la ciudad, decidió expandir el menú y comenzó a ofrecer postres y bocadillos a base de café. La gente amaba la comida y la atmósfera acogedora de la tienda, y pronto se convirtió en un lugar popular para reuniones y citas. Hoy en día Coffee-Kingdom cuenta con 4 sucursales en la ciudad de Villavicencio y próximamente busca expandirse en otras ciudades.
+                </p>
+            </div>
+            <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 contenido"><img src="../img/cafe_espresso.jpg"
+                    width="100%" alt="imagen-hitoria"></div>
+        </div>
+        <div class="row encuentranos" id="contenedorLocalizar">
+            <div class="col-sm-6 col-md-5 col-lg-6 "> <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.344887442849!2d-73.64384216511229!3d4.152414000000013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3e2d80bed5410d%3A0x41a3b6fd90707111!2sCaf%C3%A9%20Carajillo%20Express!5e0!3m2!1ses!2sco!4v1679550083592!5m2!1ses!2sco"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0 acerca_nosotros contenido">
+                <div>
+                    <div class="sub">
+                        <h2 class="galeria_titulo">Localizar</h2>
+                        <hr class="linea">
+                    </div>
+                </div>
+   
+            
+                <p class="parrafo_historia">Nos encontramos en el centro de Villavicencio, en un edificio antiguo de estilo colonial que data de la época en que la ciudad fue fundada. La fachada del edificio es de color amarillo pastel y tiene grandes ventanales que dejan pasar la luznatural al interior de la tienda. Al entrar, te encontrarás con una acogedora y cálida atmósfera, con paredes de ladrillo visto y detalles de madera en el techo y en el mobiliario. La tienda es de tamaño mediano, con varias mesas y sillas de diferentes tamaños, algunas de ellas en una pequeña terraza al aire libre que da a la calle.</p>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="footer__principal">
+        <div class="mapa info">
+            <p class="footer__titular text-center">INFO</p>
+            <div class="contenido-info">
+            <p >Calle 54 # 23A-12</p>
+            <p>coffee-kingsonm@gmail.com</p>
+            <p></p>
+            <p>+57-317-652-3287</p>
+            </div>
+
+        </div>
+        <div class=" mapa" >
+            <p class="footer__titular text-center">REDES</p>
+            <!-- Seccion de iconos -->
+            <div class="contenido-redes">
+                    <a class="icon-config text-decoration-none me-5" href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a class="icon-config text-decoration-none me-5" href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="icon-config text-decoration-none me-5" href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="icon-config text-decoration-none me-5" href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a class="icon-config text-decoration-none me-5" id="tiktok" href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>        
+            </div>
+        </div>
+        <div class="mapa">
+            <p class="text-center footer__titular">MAPA</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.344887442849!2d-73.64384216511229!3d4.152414000000013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3e2d80bed5410d%3A0x41a3b6fd90707111!2sCaf%C3%A9%20Carajillo%20Express!5e0!3m2!1ses!2sco!4v1679550083592!5m2!1ses!2sco"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
+    </div>
+                <div class="col-xs-12 mt-5 pt-4 copy">
+            <p class=" text-secondary text-center"> &copy; 2023-Juan Camilo Gualteros | Todos los derechos
+                reservados</p>
+        </div>
+</footer>
+<script src="../js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>

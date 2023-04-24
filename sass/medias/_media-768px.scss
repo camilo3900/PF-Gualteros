@@ -1,0 +1,252 @@
+@media screen and (max-width: 768px) {
+    .header {
+
+        background-color: #ddd;
+    
+        & button.header__open_menu{
+            display: block;
+            margin: 10px;
+            background-color: transparent;
+            right: 0;
+            top: 0;
+            border: 0px;
+            width: 15vw;
+            cursor: pointer;
+            font-size: 30px;
+            height: auto;
+        }
+    
+        & #nav{
+            position: absolute;
+            z-index: 5;
+        }
+            & &__nav {
+                opacity: 0;
+                visibility: hidden;
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                height: 100vh;
+                overflow: visible;
+    
+                .header__close_menu{
+                    display: block;
+                    color: orange;
+                    position: fixed;
+                    z-index: 5;
+                    margin: 10px;
+                    background-color: transparent;
+                    left: 40;
+                    top: 0;
+                    border: 0px;
+                    width: 15vw;
+                    cursor: pointer;
+                    font-size: 30px;
+                    height: auto;
+                }
+    
+                ul#header__lista{
+                    align-items: end;
+                    display: flex;
+                    flex-direction: column;
+                    width: 50vw;
+                    height: 100vh;
+                    row-gap: 20px;
+                    background-color: #fffefe;
+                    border-radius: 10px;
+                    padding: 2rem;
+                    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    
+                    li a{
+                        color: orange;
+                    }
+                    li#plegable ul{
+                        display: none;
+                    }
+                }
+            }
+            &__nav.visible{
+                opacity: 1;
+                visibility: visible;
+            }
+            & &__search {
+                display: none
+            }
+        }
+
+                    /* FOOTER RESPONSIVE */
+    .footer{
+
+        & &__principal{
+/* ocultamos la info de mi footer */
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            .info{
+                display: none;
+            }
+            .red{
+                p{
+                    font-size: 28px;
+                    font-weight: 700;
+                    color: white;
+                }
+                .redes{
+                
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    margin-left: 80px;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+                    a#tiktok{
+                        display: none;
+                    }
+            
+
+            }
+            .footer-icons-locate {
+
+                margin-top: 50px;
+                margin-left: 30px;
+                display: flex;
+                justify-content: center;
+                flex-wrap: nowrap;
+        
+                a{
+                    i{
+                        color: #00405d;
+                        font-size: 200px;
+                    }
+                }
+            }
+            }
+
+            .copy{
+                p{
+                    font-size: 15px;
+                    text-transform: capitalize;
+                }
+            }
+
+ 
+            
+        }
+        .mapa{
+
+            iframe{
+                border: 5px solid indigo;
+                width: 100%;
+                min-height: 300px;
+            }
+        }
+     
+    }
+
+/* FORMULARIO CAJA */
+
+main#contacto .contenedor_principal {
+    margin-top: 20px;
+    width: 90vw;
+    max-width: 500px;
+    height: auto;
+    display: grid;
+    row-gap: 30px;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+}
+
+.contenedor_principal .contenedor1 {
+    width: 90vw;
+    height: auto;
+    min-height: 650px;
+}
+
+.contenedor_principal .contenedor1 h1 span {
+    color: red;
+
+}
+
+.contenedor_principal .contenedor1 button {
+    font-size: 16px;
+    padding: 8px 15px;
+    max-width: 200px;
+    text-transform: unset;
+    color: white;
+    background-color: orange;
+    border: 5px bold red;
+    border-radius: 15px;
+}
+
+main#contacto .contenedor_principal .contenedor2 {
+    top: 100px;
+    width: 90vw;
+    height: auto;
+    max-height: 930px;
+    padding-top: 35px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    border-radius: 10px;
+    margin-bottom: 120px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.contenedor2 form .form__bloque2 {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 30px;
+    column-gap: 50px;
+}
+
+/* CONTENIDO CAJA RESPONSIVE */
+.contenedor_info {
+    text-align: justify;
+    margin: 10px 30px;
+}
+
+/* CSS PARA TESTIMONIOS */
+#titulos h1 {
+    margin: 30px 0;
+    color: white;
+    text-align: center;
+}
+
+.text-center {
+    .contenedor_section {
+        .card {
+
+            width: 90vw;
+            height: auto;
+
+            .card-title {
+                font-weight: 700;
+            }
+
+            .card-text {
+                text-transform: none;
+                font-size: 18px;
+                text-align: justify;
+                color: black;
+            }
+
+            .img_categoria {
+                height: 300px;
+                margin-bottom: 10px;
+            }
+        }
+
+    }
+}
+
+}

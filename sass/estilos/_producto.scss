@@ -1,0 +1,38 @@
+/* ACA VA TODO EL CSS DE PAGINA DE PRODUCTOS */
+.titulo_productos{
+    margin-top: 40px;
+    text-align: center;
+}
+.card{
+    background-color: #4d4d4d!important;
+
+    .card-body{
+        text-align: justify!important;
+        color: white;
+
+        .card-title{
+            @include nombres;
+        }
+        .card-text{
+            @include texto-tarjetas;
+            
+        }
+    }
+}
+
+section#dulces, section#bebidas_frias, section#bebidas_calientes, section#tortas{
+    margin-top: 100px;
+    position: relative;
+    z-index: -1;
+    margin-bottom: 50px;
+    margin-left: 80px;
+    div{
+        margin-bottom: 20px;
+        .sub{
+            h2{
+               /*  @include subtitulos; */
+            }
+        }
+    }
+}
+

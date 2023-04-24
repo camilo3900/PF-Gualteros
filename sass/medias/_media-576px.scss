@@ -1,0 +1,263 @@
+@media screen and (max-width: 550px) {
+
+
+    
+    .header {
+
+        background-color: #d39b21;
+
+        & button.header__open_menu {
+            display: block;
+            margin: 10px;
+            background-color: transparent;
+            right: 0;
+            top: 0;
+            border: 0px;
+            width: 15vw;
+            cursor: pointer;
+            font-size: 30px;
+            height: auto;
+        }
+
+        & #nav {
+            position: absolute;
+            z-index: 5;
+        }
+
+        & &__nav {
+            opacity: 0;
+            visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            height: 100vh;
+            overflow: visible;
+
+            .header__close_menu {
+                display: block;
+                color: orange;
+                position: fixed;
+                z-index: 5;
+                margin: 10px;
+                background-color: transparent;
+                left: 40;
+                top: 0;
+                border: 0px;
+                width: 15vw;
+                cursor: pointer;
+                font-size: 30px;
+                height: auto;
+            }
+
+            ul#header__lista {
+                align-items: end;
+                display: flex;
+                flex-direction: column;
+                width: 50vw;
+                height: 100vh;
+                row-gap: 20px;
+                background-color: #fffefe;
+                border-radius: 10px;
+                padding: 2rem;
+                box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+
+                li a {
+                    color: orange;
+                }
+
+                li#plegable ul {
+                    display: none;
+                }
+            }
+        }
+
+        &__nav.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        & &__search {
+            display: none
+        }
+    }
+
+    
+
+    /* TRABAJAMOS EL INDEX VERSION MOBILE */
+    #body_index,
+    #body__about,
+    #body__productos,
+    #body__testimonio,
+    #body__contact {
+
+
+        #main-del-home {
+            background-color: transparent;
+
+            #titulos {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+
+                h1 {
+                    font-size: 32px;
+                    font-weight: 700;
+                }
+            }
+
+            .texto_extra {
+                text-align: center;
+
+                p {
+                    font-style: italic;
+                    text-transform: lowercase;
+                    color: red;
+                }
+
+                #img_main {
+
+                    order: 0;
+                    width: 200px;
+                    height: auto;
+                    border: 3px solid white;
+                    border-radius: 70%;
+                }
+            }
+        }
+
+        .sect_anuncios {
+
+            padding: 10px;
+            text-align: justify;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            gap: 10px;
+            align-items: center;
+
+            .texto_comercial {
+                .sub {
+                    h2 {
+                        font-size: 40px;
+                        margin-top: 20px;
+                        text-align: center;
+                        color: map-get($colores, color-gray);
+                        font-weight: 700;
+                    }
+                }
+
+                p {
+                    color: aqua;
+                    text-transform: lowercase;
+                }
+            }
+
+            iframe {
+                width: 70vw;
+                border: 2px dashed black;
+                height: auto;
+            }
+
+            p {
+                font-size: 22px;
+                color: white;
+                text-transform: lowercase;
+            }
+
+        }
+
+        aside {
+            &.texto_extra {
+                color: aqua;
+                display: none;
+            }
+        }
+
+        h2.galeria_titulo {
+            margin-top: 20px;
+            text-align: center;
+            color: white;
+            font-weight: 700;
+
+        }
+
+        #galeria {
+            grid-template-columns: 1fr;
+
+            img {
+                width: 300px;
+                margin: 30px;
+                height: auto;
+            }
+        }
+
+        /*  PARA LA PAGINA ABOUT */
+        .encuentranos {
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            div.acerca_nosotros {
+                order: -1;
+                text-align: left;
+                margin: 20px auto;
+            }
+        }
+
+
+        /* PRODUCTOS RESPONSIVE */
+        h1.titulo_productos {
+            color: map-get($colores, color-gray);
+        }
+
+        section#dulces,
+        section#bebidas_frias,
+        section#bebidas_calientes,
+        section#tortas {
+            margin-left: 20px;
+
+            h2 {
+                color: map-get($colores, color-gray)
+            }
+        }
+
+        section#dulces>h2,
+        section#bebidas_frias>h2,
+        section#bebidas_calientes>h2,
+        section#tortas>h2 {
+            margin-left: auto;
+        }
+    }
+
+    .footer{
+        & &__principal{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            div.mapa{
+                .contenido-redes{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    a.icon-config {
+                        i {
+                            color: map-get($colores , redes-color);
+                            font-size: 40px;
+                            margin-bottom: 20px;
+                        }
+ 
+                    }
+                    a#tiktok{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    
+}

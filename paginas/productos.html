@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/icono.png" type="image/x-icon">
+    <!-- linkeamos la hoja de estilos global -->
+    <link rel="stylesheet" href="../sass/main.css">
+    <!-- Animaciones contenedores -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Iconos Redes Sociales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- Le meto mano al bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Pagina principal</title>
+    <!-- Etiquetas meta -->
+    <meta name="keywords" content="galleticas, chocolates, tortas, bebidas, postres">
+    <meta name="description"
+        content="Tenemos gran variedad de bebidas y acompañamientos para que degustes con familia y amigos en nuestra tienda.">
+</head>
+
+<body id="body__productos">
+    <header class="header bg-warning">
+        <div class="header__logo">
+            <a href="#"><img src="../img/logo.png" alt="logo"></a>
+        </div>
+        <button id="abrir" class="header__open_menu"><i class="fa-sharp fa-solid fa-bars"></i></button>
+        <nav class="header__nav visible" id="nav">
+            <button class="header__close_menu" id="cerrar"><i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+            <ul id="header__lista">
+                <li class="nav__opcion"><a href="../index.html">Home</a></li>
+                <li class="nav__opcion" id="plegable"><a href="./productos.html">Productos</a>
+                    <ul>
+                        <li><a href="./productos.html#dulces">1. DULCES</a></li>
+                        <li><a href="./productos.html#bebidas_frias">2. BEBIDAS FRIAS</a></li>
+                        <li><a href="./productos.html#bebidas_calientes">3. BEBIDAS CALIENTES</a></li>
+                        <li><a href="./productos.html#tortas">4. TORTAS</a></li>
+                    </ul>
+                </li>
+                <li class="nav__opcion"><a href="./about.html">About Us</a></li>
+                <li class="nav__opcion"><a href="./contacto.html">Contacto</a></li>
+                <li class="nav__opcion"><a href="./testimonios.html">Testimonios</a></li>
+            </ul>
+        </nav>
+        <div class="header__search">
+            <div>
+                <img src="../img/buscar-icon.png" alt="buscar">
+                <input type="text" placeholder="Buscar...">
+            </div>
+        </div>
+    </header>
+    <div id="titulos">
+        <h1 class="titulo_productos">NUESTROS PRODUCTOS</h1>
+    </div>
+    <section id="dulces">
+        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <div class="sub">
+                <h2 class="galeria_titulo">Dulces</h2>
+                <hr class="linea">
+            </div>
+        </div>
+        <div class="container" data-aos="fade-up" data-aos-delay="100" , data-aos-duration="2000">
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div class="card">
+                        <img class="card-img-top" src="../img/mini_chocolates.jpg" alt="mini chocolates">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">mini chocolaticos</h3>
+                            <p class="card-text">Estas a tiempo para probar nuestros mini chocolates de figuritas. Son
+                                pequeños, pero su sabor no se compara. Visita nuestra tienda y compranos. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div class="card">
+                        <img class="card-img-top" src="../img/caja_combo_chocolate.jpg" alt="caja 8 chocolates">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Caja de Chocolates</h3>
+                            <p class="card-text">Nuestra caja tiene 8 dulces cubiertos de chocolate blanco o negro.
+                                También estan rellenos con deliciosa mermelada de frutos rojos. Ideal para alegrar el
+                                día.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div class="card">
+                        <img class="card-img-top" src="../img/galletas_coffee.jpg" alt="galletas tipo coffee">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Galletas coffee</h3>
+                            <p class="card-text">Prueba nuestras Galletas Coffee, 100% caseras, huelen a café y tienen
+                                chispitas de chocolates que explotan en tu boca. Son riquísimas!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="bebidas_frias">
+        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <div class="sub">
+                <h2 class="galeria_titulo">Bebidas Frias</h2>
+                <hr class="linea">
+            </div>
+        </div>
+        <div class="container" data-aos="fade-up" data-aos-delay="100" , data-aos-duration="2000">
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div class="card">
+                        <img class="card-img-top" src="../img/gaseosa-cafe.webp" alt="gaseosa de coffee">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Pony malta de cafe</h3>
+                            <p class="card-text">Prueba esta nueva gaseosa fabricada para deportistas. Con sabor a café
+                                y mantiene tu mente activa. No esperes más, ven por tu refresco!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div class="card">
+                        <img class="card-img-top" src="../img/coffee_cake.jpeg" alt="torta coffee">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Tortas Chocolate Especial</h3>
+                            <p class="card-text">Te invitamos a probar la nueva torta especial. Es el sueño de todo
+                                amante del chocolate, tiene una espesa capa de suero de chocolate acompañada de nueces.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div class="card">
+                        <img class="card-img-top" src="../img/refresco_cafe.jpg" alt="refresco tipo coffee">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Refresco de Cafe</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit adipisci,
+                                facilis at porro sapiente tempora recusandae tempore voluptatum veritatis est architecto
+                                officia!</p>
+                        </div>
+                    </div>
+    </section>
+    <hr>
+    <section id="bebidas_calientes">
+
+        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <div class="sub">
+                <h2 class="galeria_titulo">Bebidas Calientes</h2>
+                <hr class="linea">
+            </div>
+        </div>
+        <div class="container" data-aos="fade-up" data-aos-delay="100" , data-aos-duration="2000">
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div class="card">
+                        <img class="card-img-top" src="../img/cafe_tradicional.jpg" alt="cafe tradicionar coffee">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Cafe tadicional</h3>
+                            <p class="card-text">Café instantáneo orgánico, puedes venir por el tuyo. Producto disponible de lunes a viernes entre 4:00a.m y 10:00a.m.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="../img/cafe_en_leche.jpg" alt="cafe en leche coffee">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">cafe en leche</h3>
+                            <p class="card-text">Nuestro café en leche es la mejor opción para un día frío. Puedes
+                                pedirlo con leche descremada o si lo prefieres con leche de almendras orgánicas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div class="card">
+                        <img class="card-img-top" src="../img/cafe_espresso.jpg" alt="cafe espresso coffee">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Cafe espresso</h3>
+                            <p class="card-text">El Café Espresso es una bebida concentrada y aromática, con una crema
+                                espesa y dorada en la parte superior.</p>
+                        </div>
+                    </div>
+    </section>
+    <hr>
+    <section id="tortas">
+        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <div class="sub">
+                <h2 class="galeria_titulo">Tortas y Postres</h2>
+                <hr class="linea">
+            </div>
+        </div>
+        <div class="container" data-aos="fade-up" data-aos-delay="100" , data-aos-duration="2000">
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="../img/galletas-coffee1.webp" alt="galletas coffee1">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Galletas Especiales</h3>
+                            <p class="card-text">Estas galletas son suaves y crujientes a la vez, y están llenas de
+                                trozos de chocolate que se derriten en la boca. Que esperas para probarlas?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div class="card">
+                        <img class="card-img-top" src="../img/coffee_cake.jpeg" alt="torta coffee coffee">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Tortas de café </h3>
+                            <p class="card-text">Prueba nuestras tortas de Café. Cada una tiene un aroma particular y la
+                                puedes acompañar con una deliciosa bebida refrescante. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="../img/coffee_ice_cream.jpg" alt="helado coffee">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Helado de café</h3>
+                            <p class="card-text">El mejor helado de la ciudad. Lo puedes acompañar con trozos de maní
+                                crocante o si lo prefieres, puedes pedirlo simple.</p>
+                        </div>
+                    </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__principal">
+            <div class="mapa info">
+                <p class="footer__titular text-center">INFO</p>
+                <div class="contenido-info">
+                <p >Calle 54 # 23A-12</p>
+                <p>coffee-kingsonm@gmail.com</p>
+                <p></p>
+                <p>+57-317-652-3287</p>
+                </div>
+
+            </div>
+            <div class=" mapa" >
+                <p class="footer__titular text-center">REDES</p>
+                <!-- Seccion de iconos -->
+                <div class="contenido-redes">
+                        <a class="icon-config text-decoration-none me-5" href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a class="icon-config text-decoration-none me-5" href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a class="icon-config text-decoration-none me-5" href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a class="icon-config text-decoration-none me-5" href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        <a class="icon-config text-decoration-none me-5" id="tiktok" href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>        
+                </div>
+            </div>
+            <div class="mapa">
+                <p class="text-center footer__titular">MAPA</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.344887442849!2d-73.64384216511229!3d4.152414000000013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3e2d80bed5410d%3A0x41a3b6fd90707111!2sCaf%C3%A9%20Carajillo%20Express!5e0!3m2!1ses!2sco!4v1679550083592!5m2!1ses!2sco"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+    
+        </div>
+                    <div class="col-xs-12 mt-5 pt-4 copy">
+                <p class=" text-secondary text-center"> &copy; 2023-Juan Camilo Gualteros | Todos los derechos
+                    reservados</p>
+            </div>
+    </footer>
+    <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
